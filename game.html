@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character encoding and link to the external stylesheet -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Set the title of the HTML document -->
+    <title>Guess the Word Game - Play</title>
+</head>
+
+<body>
+    <!-- Main container for the game content -->
+    <div class="container">
+        <!-- Game title with additional styling classes -->
+        <h1 class="game-title">GUESS THE WORD GAME</h1>
+
+        <!-- Container for game description and puzzle -->
+        <div class="into-guess">
+            <!-- Game description with instruction -->
+            <p class="game-description">Start by typing any letter</p>
+            <!-- Container for displaying the puzzle -->
+            <div id="puzzle" class="puzzle"></div>
+        </div>
+
+        <!-- Container for game information, including guessed letters, remaining guesses, and timer -->
+        <div class="info-container">
+            <!-- Container for displaying the remaining guesses -->
+            <div class="guess-container">
+                <p class="game-description" id="guesses"></p>
+            </div>
+
+            <!-- Container for displaying the timer -->
+            <div class="timer-container">
+                <p class="timer" id="timer">Time: 30s</p>
+            </div>
+        </div>
+
+        <!-- Container for displaying guessed letters -->
+        <div class="guessed-letters" id="guessedLetters"></div>
+
+        <!-- Line breaks for spacing -->
+        <br><br>
+
+        <!-- Button to restart the game -->
+        <button class="game-button" id="reset">Restart Game</button>
+        <!-- Link to navigate back to the start page -->
+        <a href="./start.html" class="game-button">BACK to Start</a>
+    </div>
+
+    <!-- External Scripts -->
+
+    <!-- Import the app.js script as a module -->
+    <script type="module" src="./scripts/app.js"></script>
+</body>
+
+</html>

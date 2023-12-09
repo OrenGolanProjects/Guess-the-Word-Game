@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Set the character encoding and link to the external stylesheet -->
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- Set the title of the HTML document -->
+    <title>Guess the Word Game - Start</title>
+</head>
+
+<body>
+    <!-- Main container for the start page content -->
+    <div class="container">
+        <!-- Game title welcoming players to the Guess the Word Game -->
+        <h1 class="game-title">Welcome to the Guess the Word Game!</h1>
+
+        <!-- Game instructions and information for players -->
+        <p class="game-description">
+            Instructions:
+            <br>1. Enter a number between 1 and 10 you want to guess.
+            <br>2. You have up to 10 attempts to guess each word.
+            <br>3. If you reach 10 attempts, you lose that word.
+            <br>4. Click the "Restart Game" button to start over.
+            <br><br>
+            Can you guess the hidden words?
+            <br>Good luck!
+        </p>
+
+        <!-- Input field for the player to enter the number of words to guess -->
+        <div class="game-description">
+            <label class="game-description" for="wordCount">Number of words to guess:</label>
+            <input type="number" id="wordCount" name="wordCount" required min="1" max="10">
+        </div>
+
+        <!-- Button to initiate the game -->
+        <button id="start" class="game-button">Play!</button>
+    </div>
+
+    <!-- External Scripts -->
+    <!-- Import the start.js script as a module -->
+    <script type="module" src="./scripts/start.js"></script>
+</body>
+
+</html>

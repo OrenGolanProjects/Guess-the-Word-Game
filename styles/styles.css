@@ -1,0 +1,216 @@
+/**
+ * Global CSS styles to reset box model, establish a base font size, and define styles for various elements.
+ */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* Set the base font size to 62.5% for easier rem calculations */
+}
+
+/**
+ * Styles for heading level 1 (h1) to add some bottom margin.
+ */
+h1 {
+    margin-bottom: 5%;
+}
+
+/**
+ * Body styles including background gradient, font family, size, and centering content.
+ */
+body {
+    background: linear-gradient(45deg, #6bffe1, #e22dc7, #1244c1);
+    color: #000;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/**
+ * Styles for individual letter elements (span) in the puzzle display.
+ */
+span {
+    /* Styling for individual letters */
+    border: 2px solid #fa00ab;
+    display: inline-block;
+    font-size: 2.5rem;
+    height: 4.2rem;
+    line-height: 4.2rem;
+    margin: 0 .2rem;
+    text-align: center;
+    text-transform: uppercase;
+    width: 3.2rem;
+    background-color: #f9f95b;
+}
+
+/**
+ * Styles for space elements in the puzzle display.
+ */
+.space {
+    border: transparent;
+    display: inline-block;
+    width: 3.2rem;
+    height: 4.2rem;
+    margin: 0 .2rem;
+    background-color: transparent;
+}
+
+/**
+ * Paragraph styles with font size, weight, and margin.
+ */
+p {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+
+/**
+ * Styles for the puzzle container with flex display and bottom margin.
+ */
+.puzzle {
+    display: flex;
+    margin-bottom: 4.8rem;
+}
+
+/**
+ * Button styles with background, border, cursor, and hover effect.
+ */
+.button {
+    background: #f4eeff;
+    border: none;
+    border-bottom: 2px solid #f4eeff;
+    cursor: pointer;
+    color: #424874;
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: .8rem;
+    transition: background .3s ease, color .3s ease;
+}
+
+.button:hover {
+    background: #a6b1e1;
+}
+
+/**
+ * Import Google Fonts and apply to specific elements.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/**
+ * Game title styles with the imported font, size, weight, color, and text shadow.
+ */
+.game-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 6rem;
+    font-weight: bold;
+    color: #fbe778;
+    text-align: center;
+    margin-top: 2rem;
+    text-shadow: 4px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/**
+ * Game description styles with the imported font, size, weight, color, and text shadow.
+ */
+.game-description {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: left;
+    margin-top: 1rem;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
+
+/**
+ * Game button styles with the imported font, size, weight, color, background, and hover effect.
+ */
+.game-button {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ff69b4;
+    padding: 1rem 2rem;
+    border: 1px solid #ff1493;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.game-button:hover {
+    color: #c9cad7;
+    background-color: #ff1493;
+}
+
+/**
+ * Container styles with text alignment, max width, padding, background color, border radius, box shadow, and border.
+ */
+.container {
+    text-align: center;
+    max-width: 60%;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 8px;
+    box-shadow: 0 0 500px rgba(0, 0, 0, 0.1);
+    border: 5px solid #000;
+}
+
+/**
+ * Label styles with display, bottom margin, font size, and color.
+ */
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/**
+ * Input styles with width, text alignment, padding, font size, border, border radius, and bottom margin.
+ */
+input {
+    width: 20%;
+    text-align: center;
+    padding: 25px;
+    font-size: 36px;
+    border: 5px solid #9d9898;
+    border-radius: 320px;
+    margin-bottom: 15px;
+}
+
+/**
+ * Styles for the information container with flex display, space around, and bottom margin.
+ */
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+/**
+ * Styles for timer, guess, and guessed letters elements with font family, size, weight, color, background, padding, border radius, and inline block display.
+ */
+.timer, .guess, .guessed-letters {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/**
+ * Styles for the 'Guess' element with font weight and inline block display.
+ */
+.into-guess {
+    font-weight: bold;
+    display: inline-block;
+}
