@@ -14,11 +14,12 @@ let game; // Variable to store the Game instance
 
 
 // Event listener for keypress events to handle user guesses
-window.addEventListener('keypress', function(e) {
-    const guess = String.fromCharCode(e.charCode);
+window.addEventListener('keydown', function(e) {
+    const guess = String.fromCharCode(e.keyCode);
     game.makeGuess(guess);
     render();
 });
+
 
 // Define the updateTimerDisplay function to update the timer element content
 function updateTimerDisplay() {
